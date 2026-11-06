@@ -1,0 +1,54 @@
+html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil Profissional</title>
+  <script src="https://unpkg.com"></script>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      background: #121212 url('https://githubusercontent.com') no-repeat top center/cover; 
+      font-family: 'Inter', sans-serif; 
+      color: white; 
+      height: 100vh; 
+      display: flex; 
+      justify-content: center; 
+    }
+    #container { width: 100%; max-width: 588px; margin: 56px auto 0; padding: 0 24px; text-align: center; }
+    #profile { padding: 24px; text-align: center; }
+    #profile img { width: 112px; height: 112px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.5); object-fit: cover; display: inline-block; }
+    #profile p { font-size: 15px !important; letter-spacing: 0.5px; font-weight: 500; margin-top: 8px; }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 16px; padding: 24px 0; }
+    ul li a { display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 8px; text-decoration: none; color: white; font-size: 14px !important; font-weight: 400; }
+    #social-links { display: flex; justify-content: center; font-size: 24px; gap: 16px; padding: 24px 0; }
+    #social-links a { color: white; }
+    footer { padding: 24px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="profile">
+      <!-- Link direto e livre que vai carregar perfeitamente no seu navegador -->
+      <img src="./foto.jpeg" alt="Minha Foto de Perfil" />
+      <p>Olá, seja bem-vinda! ✨</p>
+    </div>
+    <ul>
+      <li><a href="https://linkedin.com" target="_blank">🌸 Meu Currículo no LinkedIn</a></li>
+      <li><a href="https://github.com" target="_blank">💻 Meus Projetos & Portfólio</a></li>
+      <li><a href="https://wa.me" target="_blank">💖 Vamos conversar no WhatsApp?</a></li>
+    </ul>
+    <div id="social-links">
+      <a href="https://github.com" target="_blank"><i class="ph ph-github-logo"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+    </div>
+    <footer>Feito com carinho ✨</footer>
+  </div>
+</body>
+</html>
